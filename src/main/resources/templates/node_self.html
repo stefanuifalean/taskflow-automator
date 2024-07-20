@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<article th:fragment="GenericGenerator" th:with="cls = ${node.getClass()}">
+  <p>Reflected resource (process element) fields</p>
+  <div class="card blue-grey darken-1">
+    <div class="card-content white-text">
+      <span id="nodeClassNames" class="card-title" th:text="${nodeClassnames}"></span>
+      <table class="responsive-table highlight">
+        <tbody>
+        <!--/* Since default Reflection API retrieves only public scoped members in superclasses use separate lib */-->
+        <!--/*@thymesVar id="fieldUtils" type="org.apache.commons.lang3.reflect.FieldUtils"*/-->
+        <th:block th:each="field : ${fieldUtils.getAllFields(cls)}">
+          <th:block th:with="val = ${fieldUtils.readField(field, node, true)}">
+            <tr th:if="${val}">
+              <td th:text="${field.getName()}"/>
+              <td th:class="'field' + ' ' + ${field.getName()}" th:text="${val}"/>
+            </tr>
+          </th:block>
+        </th:block>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</article>
+</html>

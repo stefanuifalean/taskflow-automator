@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" th:href="@{/css/default.css}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <title>Taskmate: Graph API DEMO Front-End</title>
+</head>
+<body>
+<div class="container">
+  <header>
+    <nav>
+      <div class="nav-wrapper">
+        <span class="brand-logo right">Universitatea Babeș-Bolyai CDI</span>
+        <ul id="nav-mobile" class="left">
+          <li><a th:href="|/knowledge/subgraph/mdl!Activity-55260-Get_to_Projects/2|">Network</a></li>
+          <li><a th:href="|/start|">InitNavigation</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <section th:if="${node}" th:insert="node :: main"></section>
+  <footer>
+    <h5>Taskmate: Graph API DEMO Front-End</h5>
+  </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<section class="row" th:fragment="main">
+  <article class="col s12" th:insert="node_self :: GenericGenerator"></article>
+  <article class="col s6" th:insert="node_incoming :: Iterator"></article>
+  <article class="col s6" th:insert="node_outgoing :: Iterator"></article>
+<!--  <article class="col s12" th:insert="node_semantic :: KnowledgeManagement"></article>-->
+</section>
+</html>
