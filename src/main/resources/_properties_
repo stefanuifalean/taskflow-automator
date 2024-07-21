@@ -1,6 +1,6 @@
 outlookUrl = https://outlook.office.com/mail/
-emailAddress = taskmateubb@outlook.com
+emailAddress = ?email?
 password = ????????
-to = ???????
+to = ?email?
 subject = @Taskmate: Outlook Send Mail task automation
 body = Hello, dear project colleague. This is an automated sent mail. On behalf of Babeș-Bolyai University, we congratulate you for the fruitful partnership with Endava. This acknowledges the end of the Taskmate collaboration. See you soon!
