@@ -1,0 +1,878 @@
+@prefix :        <http://www.taskmate.eu/outlook#> .
+@prefix cv:      <http://www.comvantage.eu/mm#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns0:     <http://www.taskmate.eu/mm#> .
+
+ns0:graphmetadata {
+    :Task_Flow-TaskFlow_OutlookSendMail_
+          a       ns0:Task_Flow , cv:Model_class ;
+          ns0:Auditing "No" ;
+          ns0:Closed "No" ;
+          ns0:Executable "No" ;
+          ns0:Font_size "0" ;
+          ns0:ID  "EXPR val:\"25802\"" ;
+          ns0:IsAbstract "no" ;
+          ns0:IsActive "no" ;
+          ns0:IsLeaf "no" ;
+          ns0:IsReadOnly "no" ;
+          ns0:IsReentrant "no" ;
+          ns0:IsSingleExecution
+                  "no" ;
+          ns0:Model_type "Current model" ;
+          ns0:Monitoring "No" ;
+          ns0:Name "TaskFlow_OutlookSendMail" ;
+          ns0:Process_type "None" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:State "In process" ;
+          ns0:Type "Task Flow" ;
+          ns0:Version "" ;
+          ns0:Visibility "public" ;
+          ns0:fontcolor "EXPR val:error:\"[acoexpar-01] Internal error!  \\\"fontcolor\\\" (BPModel)\"" ;
+          ns0:objectid "EXPR val:25802" ;
+          ns0:vizGrayscaleMode
+                  "EXPR val:0" .
+}
+
+:Task_Flow-TaskFlow_OutlookSendMail_ {
+    :EndState-26188-EndState-26188
+          a       cv:Instance_class , ns0:EndState ;
+          ns0:Name "EndState-26188" ;
+          ns0:Position "NODE x:15.75cm y:88.75cm index:78" ;
+          ns0:Process-level "yes" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:fontcolor "EXPR val:\"black\"" ;
+          ns0:objectid "EXPR val:26188" ;
+          ns0:vizGrayscaleMode
+                  "EXPR val:0" .
+
+    :Property-26213-Property-26213
+          a       cv:Instance_class , ns0:Property ;
+          ns0:Identifier "body" ;
+          ns0:Name "Property-26213" ;
+          ns0:Position "NODE x:28cm y:75.25cm index:90" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :Property-26192-Property-26192
+          a       cv:Instance_class , ns0:Property ;
+          ns0:Identifier "outlookUrl" ;
+          ns0:Name "Property-26192" ;
+          ns0:Position "NODE x:21cm y:4.25cm index:80" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :EndState-26114-EndState-26114
+          a       cv:Instance_class , ns0:EndState ;
+          ns0:Is_inside :Activity-26059-Activity-26059 , :Activity-26105-Activity-26105 ;
+          ns0:Name "EndState-26114" ;
+          ns0:Position "NODE x:23cm y:66cm index:52" ;
+          ns0:Process-level "no" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:fontcolor "EXPR val:\"\"" ;
+          ns0:objectid "EXPR val:26114" ;
+          ns0:vizGrayscaleMode
+                  "EXPR val:0" .
+
+    :Action-26177-Action-26177
+          a       ns0:Action , cv:Instance_class ;
+          ns0:Action_type "Input" ;
+          ns0:Element_Type "input" ;
+          ns0:Input_type "Click" ;
+          ns0:Invisible_Task "Access Web Address" ;
+          ns0:Is_inside :Activity-26059-Activity-26059 ;
+          ns0:Name "Action-26177" ;
+          ns0:Position "NODE x:16cm y:82.75cm w:2cm h:2cm index:73" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:Statement "EXPR val:\"(Click)\"" ;
+          ns0:followedBy :EndState-26181-EndState-26181 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :Activity-26014-Activity-26014
+          a       ns0:Activity , cv:Instance_class ;
+          ns0:Color "white" ;
+          ns0:Fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:Is_inside :Activity-25807-Activity-25807 ;
+          ns0:Name "Activity-26014" ;
+          ns0:Position "NODE x:5.5cm y:25cm w:20.25cm h:8.5cm index:20" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"\" param:\"\"" ;
+          ns0:Text "Fill password field" ;
+          ns0:followedBy :Action-26223-Action-26223 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :Action-26034-Action-26034
+          a       ns0:Action , cv:Instance_class ;
+          ns0:Action_type "See" ;
+          ns0:CSS_Selector "button[type=\"submit\"]";
+          ns0:Element_Type "button" ;
+          ns0:Input_type "Click" ;
+          ns0:Invisible_Task "Access Web Address" ;
+          ns0:Is_inside :Activity-26014-Activity-26014 , :Activity-25807-Activity-25807 ;
+          ns0:Name "Action-26034" ;
+          ns0:Position "NODE x:6.25cm y:30.75cm w:5.75cm h:2cm index:25" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:Statement "EXPR val:\"(See) button Sign in\"" ;
+          ns0:Static_Text "Sign in" ;
+          ns0:followedBy :Action-26039-Action-26039 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :StartState-26019-StartState-26019
+          a       ns0:StartState , cv:Instance_class ;
+          ns0:Is_inside :Activity-26014-Activity-26014 , :Activity-25807-Activity-25807 ;
+          ns0:Name "StartState-26019" ;
+          ns0:Position "NODE x:6.75cm y:26.75cm index:22" ;
+          ns0:Process-level "no" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:followedBy :Action-26024-Action-26024 ;
+          ns0:fontcolor "EXPR val:\"\"" ;
+          ns0:objectid "EXPR val:26019" ;
+          ns0:vizGrayscaleMode
+                  "EXPR val:0" .
+
+    :EndState-26141-EndState-26141
+          a       cv:Instance_class , ns0:EndState ;
+          ns0:Is_inside :Activity-26059-Activity-26059 , :Activity-26132-Activity-26132 ;
+          ns0:Name "EndState-26141" ;
+          ns0:Position "NODE x:24cm y:78.25cm index:60" ;
+          ns0:Process-level "no" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:fontcolor "EXPR val:\"\"" ;
+          ns0:objectid "EXPR val:26141" ;
+          ns0:vizGrayscaleMode
+                  "EXPR val:0" .
+
+    :Action-26173-Action-26173
+          a       ns0:Action , cv:Instance_class ;
+          ns0:Action_type "See" ;
+          ns0:CSS_Selector "button[aria-label=\"Send\"]" ;
+          ns0:Element_Type "button" ;
+          ns0:Input_type "Click" ;
+          ns0:Invisible_Task "Access Web Address" ;
+          ns0:Is_inside :Activity-26059-Activity-26059 ;
+          ns0:Name "Action-26173" ;
+          ns0:Position "NODE x:6.25cm y:82.75cm w:5.25cm h:2cm index:72" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:Statement "EXPR val:\"(See) button Send\"" ;
+          ns0:Static_Text "Send" ;
+          ns0:followedBy :Action-26177-Action-26177 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :Property-26209-Property-26209
+          a       cv:Instance_class , ns0:Property ;
+          ns0:Identifier "subject" ;
+          ns0:Name "Property-26209" ;
+          ns0:Position "NODE x:1.25cm y:66cm index:88" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :Action-26227-Action-26227
+          a       ns0:Action , cv:Instance_class ;
+          ns0:Action_type "Input" ;
+          ns0:Element_Type "input" ;
+          ns0:Input_type "Click" ;
+          ns0:Invisible_Task "Access Web Address" ;
+          ns0:Is_inside :Activity-25807-Activity-25807 ;
+          ns0:Name "Action-26227" ;
+          ns0:Position "NODE x:16cm y:36cm w:2.25cm h:2cm index:93" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:Statement "EXPR val:\"(Click)\"" ;
+          ns0:followedBy :EndState-26054-EndState-26054 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :Action-26024-Action-26024
+          a       ns0:Action , cv:Instance_class ;
+          ns0:Action_type "See" ;
+          ns0:CSS_Selector "input[placeholder=\"Password\"] ";
+          ns0:Element_Type "input" ;
+          ns0:Input_type "Click" ;
+          ns0:Invisible_Task "Access Web Address" ;
+          ns0:Is_inside :Activity-26014-Activity-26014 , :Activity-25807-Activity-25807 ;
+          ns0:Name "Action-26024" ;
+          ns0:Position "NODE x:10.75cm y:25.75cm w:6cm h:2cm index:23" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:Statement "EXPR val:\"(See) input Password\"" ;
+          ns0:Static_Text "Password" ;
+          ns0:followedBy :Action-26029-Action-26029 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :EndState-26044-EndState-26044
+          a       cv:Instance_class , ns0:EndState ;
+          ns0:Is_inside :Activity-26014-Activity-26014 , :Activity-25807-Activity-25807 ;
+          ns0:Name "EndState-26044" ;
+          ns0:Position "NODE x:23.25cm y:31.5cm index:27" ;
+          ns0:Process-level "no" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:fontcolor "EXPR val:\"\"" ;
+          ns0:objectid "EXPR val:26044" ;
+          ns0:vizGrayscaleMode
+                  "EXPR val:0" .
+
+    :Activity-26105-Activity-26105
+          a       ns0:Activity , cv:Instance_class ;
+          ns0:Color "white" ;
+          ns0:Fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:Is_inside :Activity-26059-Activity-26059 ;
+          ns0:Name "Activity-26105" ;
+          ns0:Position "NODE x:6.5cm y:60cm w:18.25cm h:8.25cm index:50" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"\" param:\"\"" ;
+          ns0:Text "Fill Subject field" ;
+          ns0:followedBy :Activity-26132-Activity-26132 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :StartState-26136-StartState-26136
+          a       ns0:StartState , cv:Instance_class ;
+          ns0:Is_inside :Activity-26059-Activity-26059 , :Activity-26132-Activity-26132 ;
+          ns0:Name "StartState-26136" ;
+          ns0:Position "NODE x:7cm y:73.25cm index:59" ;
+          ns0:Process-level "no" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:followedBy :Action-26146-Action-26146 ;
+          ns0:fontcolor "EXPR val:\"\"" ;
+          ns0:objectid "EXPR val:26136" ;
+          ns0:vizGrayscaleMode
+                  "EXPR val:0" .
+
+    :Activity-26132-Activity-26132
+          a       ns0:Activity , cv:Instance_class ;
+          ns0:Color "white" ;
+          ns0:Fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:Is_inside :Activity-26059-Activity-26059 ;
+          ns0:Name "Activity-26132" ;
+          ns0:Position "NODE x:5.5cm y:71.75cm w:20.25cm h:8.25cm index:58" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"\" param:\"\"" ;
+          ns0:Text "Fill Body field" ;
+          ns0:followedBy :Action-26173-Action-26173 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :Activity-26059-Activity-26059
+          a       ns0:Activity , cv:Instance_class ;
+          ns0:Color "white" ;
+          ns0:Fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:Name "Activity-26059" ;
+          ns0:Position "NODE x:4cm y:42.5cm w:22.75cm h:43cm index:34" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"\" param:\"\"" ;
+          ns0:Text "Send email" ;
+          ns0:followedBy :EndState-26188-EndState-26188 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :Action-26029-Action-26029
+          a       ns0:Action , cv:Instance_class ;
+          ns0:Action_type "Input" ;
+          ns0:Element_Type "input" ;
+          ns0:Input_type "Type" ;
+          ns0:Invisible_Task "Access Web Address" ;
+          ns0:Is_inside :Activity-26014-Activity-26014 , :Activity-25807-Activity-25807 ;
+          ns0:Name "Action-26029" ;
+          ns0:Position "NODE x:20cm y:25.75cm w:5cm h:2cm index:24" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:Statement "EXPR val:\"(Type) password\"" ;
+          ns0:followedBy :Action-26034-Action-26034 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:requiresInput :Property-26201-Property-26201 ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :EndState-25847-EndState-25847
+          a       cv:Instance_class , ns0:EndState ;
+          ns0:Is_inside :Activity-25807-Activity-25807 , :Activity-25818-Activity-25818 ;
+          ns0:Name "EndState-25847" ;
+          ns0:Position "NODE x:23.25cm y:19.75cm index:11" ;
+          ns0:Process-level "no" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:fontcolor "EXPR val:\"\"" ;
+          ns0:objectid "EXPR val:25847" ;
+          ns0:vizGrayscaleMode
+                  "EXPR val:0" .
+
+    :Action-26086-Action-26086
+          a       ns0:Action , cv:Instance_class ;
+          ns0:Action_type "See" ;
+          ns0:CSS_Selector "div[aria-label=To]" ;
+          ns0:Element_Type "input" ;
+          ns0:Input_type "Click" ;
+          ns0:Invisible_Task "Access Web Address" ;
+          ns0:Is_inside :Activity-26077-Activity-26077 , :Activity-26059-Activity-26059 ;
+          ns0:Name "Action-26086" ;
+          ns0:Position "NODE x:13.5cm y:49.5cm w:4.5cm h:2cm index:43" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:Statement "EXPR val:\"(See) input To\"" ;
+          ns0:Static_Text "To" ;
+          ns0:followedBy :Action-26091-Action-26091 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :Activity-25807-Activity-25807
+          a       ns0:Activity , cv:Instance_class ;
+          ns0:Color "white" ;
+          ns0:Fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:Name "Activity-25807" ;
+          ns0:Position "NODE x:4cm y:6cm w:22.75cm h:32.75cm index:2" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"\" param:\"\"" ;
+          ns0:Text "Authenticate" ;
+          ns0:followedBy :Activity-26059-Activity-26059 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :Action-26067-Action-26067
+          a       ns0:Action , cv:Instance_class ;
+          ns0:Action_type "See" ;
+          ns0:CSS_Selector "button[aria-label=\"New mail\"]" ;
+          ns0:Element_Type "button" ;
+          ns0:Input_type "Click" ;
+          ns0:Invisible_Task "Access Web Address" ;
+          ns0:Is_inside :Activity-26059-Activity-26059 ;
+          ns0:Name "Action-26067" ;
+          ns0:Position "NODE x:11.5cm y:43.75cm w:6.25cm h:2cm index:37" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:Statement "EXPR val:\"(See) button New mail\"" ;
+          ns0:Static_Text "New mail" ;
+          ns0:followedBy :Action-26071-Action-26071 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :Activity-26077-Activity-26077
+          a       ns0:Activity , cv:Instance_class ;
+          ns0:Color "white" ;
+          ns0:Fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:Is_inside :Activity-26059-Activity-26059 ;
+          ns0:Name "Activity-26077" ;
+          ns0:Position "NODE x:6.5cm y:48.75cm w:18.25cm h:7.75cm index:41" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"\" param:\"\"" ;
+          ns0:Text "Fill To field" ;
+          ns0:followedBy :Activity-26105-Activity-26105 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :Property-26201-Property-26201
+          a       cv:Instance_class , ns0:Property ;
+          ns0:Identifier "password" ;
+          ns0:Name "Property-26201" ;
+          ns0:Position "NODE x:28cm y:28.5cm index:84" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :EndState-26181-EndState-26181
+          a       cv:Instance_class , ns0:EndState ;
+          ns0:Is_inside :Activity-26059-Activity-26059 ;
+          ns0:Name "EndState-26181" ;
+          ns0:Position "NODE x:23.5cm y:83.5cm index:74" ;
+          ns0:Process-level "no" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:fontcolor "EXPR val:\"\"" ;
+          ns0:objectid "EXPR val:26181" ;
+          ns0:vizGrayscaleMode
+                  "EXPR val:0" .
+
+    :Action-25837-Action-25837
+          a       ns0:Action , cv:Instance_class ;
+          ns0:Action_type "See" ;
+          ns0:Element_Type "button" ;
+          ns0:Input_type "Click" ;
+          ns0:Invisible_Task "Access Web Address" ;
+          ns0:Is_inside :Activity-25807-Activity-25807 , :Activity-25818-Activity-25818 ;
+          ns0:Name "Action-25837" ;
+          ns0:Position "NODE x:6.75cm y:18.75cm w:5.25cm h:2cm index:9" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:Statement "EXPR val:\"(See) button Next\"" ;
+          ns0:Static_Text "Next" ;
+          ns0:XPath "/html/body/div/form[1]/div/div/div[2]/div[1]/div/div/div/div[2]/div[1]/div[3]/div/div/div/div[4]/div/div/div/div/input" ;
+          ns0:followedBy :Action-25842-Action-25842 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :EndState-26054-EndState-26054
+          a       cv:Instance_class , ns0:EndState ;
+          ns0:Is_inside :Activity-25807-Activity-25807 ;
+          ns0:Name "EndState-26054" ;
+          ns0:Position "NODE x:23.25cm y:36.75cm index:33" ;
+          ns0:Process-level "no" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:fontcolor "EXPR val:\"\"" ;
+          ns0:objectid "EXPR val:26054" ;
+          ns0:vizGrayscaleMode
+                  "EXPR val:0" .
+
+    :Action-26091-Action-26091
+          a       ns0:Action , cv:Instance_class ;
+          ns0:Action_type "Input" ;
+          ns0:Element_Type "input" ;
+          ns0:Input_type "Type" ;
+          ns0:Invisible_Task "Access Web Address" ;
+          ns0:Is_inside :Activity-26077-Activity-26077 , :Activity-26059-Activity-26059 ;
+          ns0:Name "Action-26091" ;
+          ns0:Position "NODE x:14.25cm y:53.75cm w:2.75cm h:2cm index:44" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:Statement "EXPR val:\"(Type) to\"" ;
+          ns0:followedBy :EndState-26096-EndState-26096 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:requiresInput :Property-26205-Property-26205 ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :StartState-26081-StartState-26081
+          a       ns0:StartState , cv:Instance_class ;
+          ns0:Is_inside :Activity-26059-Activity-26059 , :Activity-26077-Activity-26077 ;
+          ns0:Name "StartState-26081" ;
+          ns0:Position "NODE x:7.75cm y:50.5cm index:42" ;
+          ns0:Process-level "no" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:followedBy :Action-26086-Action-26086 ;
+          ns0:fontcolor "EXPR val:\"\"" ;
+          ns0:objectid "EXPR val:26081" ;
+          ns0:vizGrayscaleMode
+                  "EXPR val:0" .
+
+    :StartState-25810-StartState-25810
+          a       ns0:StartState , cv:Instance_class ;
+          ns0:Is_inside :Activity-25807-Activity-25807 ;
+          ns0:Name "StartState-25810" ;
+          ns0:Position "NODE x:7.25cm y:8cm index:3" ;
+          ns0:Process-level "no" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:followedBy :Action-25814-Action-25814 ;
+          ns0:fontcolor "EXPR val:\"\"" ;
+          ns0:objectid "EXPR val:25810" ;
+          ns0:vizGrayscaleMode
+                  "EXPR val:0" .
+
+    :Action-26151-Action-26151
+          a       ns0:Action , cv:Instance_class ;
+          ns0:Action_type "Input" ;
+          ns0:Element_Type "input" ;
+          ns0:Input_type "Type" ;
+          ns0:Invisible_Task "Access Web Address" ;
+          ns0:Is_inside :Activity-26059-Activity-26059 , :Activity-26132-Activity-26132 ;
+          ns0:Name "Action-26151" ;
+          ns0:Position "NODE x:20.25cm y:72.25cm w:3.75cm h:2cm index:62" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:Statement "EXPR val:\"(Type) body\"" ;
+          ns0:followedBy :Action-26155-Action-26155 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:requiresInput :Property-26213-Property-26213 ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :Action-26071-Action-26071
+          a       ns0:Action , cv:Instance_class ;
+          ns0:Action_type "Input" ;
+          ns0:Element_Type "input" ;
+          ns0:Input_type "Click" ;
+          ns0:Invisible_Task "Access Web Address" ;
+          ns0:Is_inside :Activity-26059-Activity-26059 ;
+          ns0:Name "Action-26071" ;
+          ns0:Position "NODE x:22.25cm y:43.75cm w:2cm h:2cm index:38" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:Statement "EXPR val:\"(Click)\"" ;
+          ns0:followedBy :Activity-26077-Activity-26077 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :Action-26124-Action-26124
+          a       ns0:Action , cv:Instance_class ;
+          ns0:Action_type "Input" ;
+          ns0:Element_Type "input" ;
+          ns0:Input_type "Type" ;
+          ns0:Invisible_Task "Access Web Address" ;
+          ns0:Is_inside :Activity-26059-Activity-26059 , :Activity-26105-Activity-26105 ;
+          ns0:Name "Action-26124" ;
+          ns0:Position "NODE x:13.75cm y:65.5cm w:4.5cm h:2cm index:54" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:Statement "EXPR val:\"(Type) subject\"" ;
+          ns0:followedBy :EndState-26114-EndState-26114 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:requiresInput :Property-26209-Property-26209 ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :Action-25827-Action-25827
+          a       ns0:Action , cv:Instance_class ;
+          ns0:Action_type "See" ;
+          ns0:Element_Type "input" ;
+          ns0:Input_type "Click" ;
+          ns0:Invisible_Task "Access Web Address" ;
+          ns0:Is_inside :Activity-25807-Activity-25807 , :Activity-25818-Activity-25818 ;
+          ns0:Name "Action-25827" ;
+          ns0:Position "NODE x:10.5cm y:14cm w:5cm h:2cm index:7" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:Statement "EXPR val:\"(See) input Email\"" ;
+          ns0:Static_Text "Email" ;
+          ns0:XPath "/html/body/div/form[1]/div/div/div[2]/div[1]/div/div/div/div[2]/div[1]/div[3]/div/div/div/div[2]/div[2]/div/input[1]" ;
+          ns0:followedBy :Action-25832-Action-25832 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :Action-25842-Action-25842
+          a       ns0:Action , cv:Instance_class ;
+          ns0:Action_type "Input" ;
+          ns0:Element_Type "input" ;
+          ns0:Input_type "Click" ;
+          ns0:Invisible_Task "Access Web Address" ;
+          ns0:Is_inside :Activity-25807-Activity-25807 , :Activity-25818-Activity-25818 ;
+          ns0:Name "Action-25842" ;
+          ns0:Position "NODE x:16.25cm y:18.75cm w:2.25cm h:2cm index:10" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:Statement "EXPR val:\"(Click)\"" ;
+          ns0:followedBy :EndState-25847-EndState-25847 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :StartState-25822-StartState-25822
+          a       ns0:StartState , cv:Instance_class ;
+          ns0:Is_inside :Activity-25807-Activity-25807 , :Activity-25818-Activity-25818 ;
+          ns0:Name "StartState-25822" ;
+          ns0:Position "NODE x:6cm y:15cm index:6" ;
+          ns0:Process-level "no" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:followedBy :Action-25827-Action-25827 ;
+          ns0:fontcolor "EXPR val:\"\"" ;
+          ns0:objectid "EXPR val:25822" ;
+          ns0:vizGrayscaleMode
+                  "EXPR val:0" .
+
+    :Action-26119-Action-26119
+          a       ns0:Action , cv:Instance_class ;
+          ns0:Action_type "See" ;
+          ns0:CSS_Selector "input[aria-label=\"Add a subject\"]" ;
+          ns0:Element_Type "input" ;
+          ns0:Input_type "Click" ;
+          ns0:Invisible_Task "Access Web Address" ;
+          ns0:Is_inside :Activity-26059-Activity-26059 , :Activity-26105-Activity-26105 ;
+          ns0:Name "Action-26119" ;
+          ns0:Position "NODE x:13.25cm y:61cm w:5.75cm h:2cm index:53" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:Statement "EXPR val:\"(See) input Subject\"" ;
+          ns0:Static_Text "Subject" ;
+          ns0:followedBy :Action-26124-Action-26124 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :StartState-26063-StartState-26063
+          a       ns0:StartState , cv:Instance_class ;
+          ns0:Is_inside :Activity-26059-Activity-26059 ;
+          ns0:Name "StartState-26063" ;
+          ns0:Position "NODE x:6.75cm y:44.5cm index:36" ;
+          ns0:Process-level "no" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:followedBy :Action-26067-Action-26067 ;
+          ns0:fontcolor "EXPR val:\"\"" ;
+          ns0:objectid "EXPR val:26063" ;
+          ns0:vizGrayscaleMode
+                  "EXPR val:0" .
+
+    :Action-26223-Action-26223
+          a       ns0:Action , cv:Instance_class ;
+          ns0:Action_type "See" ;
+          ns0:CSS_Selector "button[id=\"acceptButton\"]" ;
+          ns0:Element_Type "button" ;
+          ns0:Input_type "Click" ;
+          ns0:Invisible_Task "Access Web Address" ;
+          ns0:Is_inside :Activity-25807-Activity-25807 ;
+          ns0:Name "Action-26223" ;
+          ns0:Position "NODE x:6.75cm y:36cm w:5cm h:2cm index:92" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:Statement "EXPR val:\"(See) button Yes\"" ;
+          ns0:Static_Text "Yes" ;
+          ns0:followedBy :Action-26227-Action-26227 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :StartState-25804-StartState-25804
+          a       ns0:StartState , cv:Instance_class ;
+          ns0:Name "StartState-25804" ;
+          ns0:Position "NODE x:15.5cm y:1.25cm index:1" ;
+          ns0:Process-level "yes" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:followedBy :Activity-25807-Activity-25807 ;
+          ns0:fontcolor "EXPR val:\"black\"" ;
+          ns0:objectid "EXPR val:25804" ;
+          ns0:vizGrayscaleMode
+                  "EXPR val:0" .
+
+    :EndState-26096-EndState-26096
+          a       cv:Instance_class , ns0:EndState ;
+          ns0:Is_inside :Activity-26077-Activity-26077 , :Activity-26059-Activity-26059 ;
+          ns0:Name "EndState-26096" ;
+          ns0:Position "NODE x:23cm y:54.5cm index:45" ;
+          ns0:Process-level "no" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:fontcolor "EXPR val:\"\"" ;
+          ns0:objectid "EXPR val:26096" ;
+          ns0:vizGrayscaleMode
+                  "EXPR val:0" .
+
+    :Action-25832-Action-25832
+          a       ns0:Action , cv:Instance_class ;
+          ns0:Action_type "Input" ;
+          ns0:Element_Type "input" ;
+          ns0:Input_type "Type" ;
+          ns0:Invisible_Task "Access Web Address" ;
+          ns0:Is_inside :Activity-25807-Activity-25807 , :Activity-25818-Activity-25818 ;
+          ns0:Name "Action-25832" ;
+          ns0:Position "NODE x:19.5cm y:14.25cm w:6cm h:2cm index:8" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:Statement "EXPR val:\"(Type) emailAddress\"" ;
+          ns0:followedBy :Action-25837-Action-25837 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:requiresInput :Property-26196-Property-26196 ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :StartState-26109-StartState-26109
+          a       ns0:StartState , cv:Instance_class ;
+          ns0:Is_inside :Activity-26059-Activity-26059 , :Activity-26105-Activity-26105 ;
+          ns0:Name "StartState-26109" ;
+          ns0:Position "NODE x:7.75cm y:61.75cm index:51" ;
+          ns0:Process-level "no" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:followedBy :Action-26119-Action-26119 ;
+          ns0:fontcolor "EXPR val:\"\"" ;
+          ns0:objectid "EXPR val:26109" ;
+          ns0:vizGrayscaleMode
+                  "EXPR val:0" .
+
+    :Action-26160-Action-26160
+          a       ns0:Action , cv:Instance_class ;
+          ns0:Action_type "Input" ;
+          ns0:Element_Type "input" ;
+          ns0:Input_type "Click" ;
+          ns0:Invisible_Task "Access Web Address" ;
+          ns0:Is_inside :Activity-26059-Activity-26059 , :Activity-26132-Activity-26132 ;
+          ns0:Name "Action-26160" ;
+          ns0:Position "NODE x:16.75cm y:77.25cm w:2cm h:2cm index:64" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:Statement "EXPR val:\"(Click)\"" ;
+          ns0:followedBy :EndState-26141-EndState-26141 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :Action-26146-Action-26146
+          a       ns0:Action , cv:Instance_class ;
+          ns0:Action_type "See" ;
+          ns0:CSS_Selector "div[aria-label=\"Message body, press Alt+F10 to exit\"]" ;
+          ns0:Element_Type "input" ;
+          ns0:Input_type "Click" ;
+          ns0:Invisible_Task "Access Web Address" ;
+          ns0:Is_inside :Activity-26059-Activity-26059 , :Activity-26132-Activity-26132 ;
+          ns0:Name "Action-26146" ;
+          ns0:Position "NODE x:11.25cm y:72.5cm w:5cm h:2cm index:61" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:Statement "EXPR val:\"(See) input Body\"" ;
+          ns0:Static_Text "Body" ;
+          ns0:followedBy :Action-26151-Action-26151 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :Action-25814-Action-25814
+          a       ns0:Action , cv:Instance_class ;
+          ns0:Action_type "Invisible" ;
+          ns0:Element_Type "input" ;
+          ns0:Input_type "Type" ;
+          ns0:Invisible_Task "Access Web Address" ;
+          ns0:Is_inside :Activity-25807-Activity-25807 ;
+          ns0:Name "Action-25814" ;
+          ns0:Position "NODE x:13cm y:7cm w:5.75cm h:2.75cm index:4" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:Statement "EXPR val:\"(Access Web Address) outlookUrl\"" ;
+          ns0:followedBy :Activity-25818-Activity-25818 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:requiresInput :Property-26192-Property-26192 ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :Property-26196-Property-26196
+          a       cv:Instance_class , ns0:Property ;
+          ns0:Identifier "emailAddress" ;
+          ns0:Name "Property-26196" ;
+          ns0:Position "NODE x:28cm y:16.75cm index:82" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :Property-26205-Property-26205
+          a       cv:Instance_class , ns0:Property ;
+          ns0:Identifier "to" ;
+          ns0:Name "Property-26205" ;
+          ns0:Position "NODE x:2cm y:54.5cm index:86" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :Action-26155-Action-26155
+          a       ns0:Action , cv:Instance_class ;
+          ns0:Action_type "See" ;
+          ns0:CSS_Selector "input[aria-label=\"Add a subject\"]" ;
+          ns0:Element_Type "input" ;
+          ns0:Input_type "Click" ;
+          ns0:Invisible_Task "Access Web Address" ;
+          ns0:Is_inside :Activity-26059-Activity-26059 , :Activity-26132-Activity-26132 ;
+          ns0:Name "Action-26155" ;
+          ns0:Position "NODE x:6.25cm y:77.25cm w:5.75cm h:2cm index:63" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:Statement "EXPR val:\"(See) input Subject\"" ;
+          ns0:Static_Text "Subject" ;
+          ns0:followedBy :Action-26160-Action-26160 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :Action-26039-Action-26039
+          a       ns0:Action , cv:Instance_class ;
+          ns0:Action_type "Input" ;
+          ns0:Element_Type "input" ;
+          ns0:Input_type "Click" ;
+          ns0:Invisible_Task "Access Web Address" ;
+          ns0:Is_inside :Activity-26014-Activity-26014 , :Activity-25807-Activity-25807 ;
+          ns0:Name "Action-26039" ;
+          ns0:Position "NODE x:16.25cm y:30.75cm w:2cm h:2cm index:26" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"Sort custom attributes (ascending)\" param:\"\"" ;
+          ns0:Statement "EXPR val:\"(Click)\"" ;
+          ns0:followedBy :EndState-26044-EndState-26044 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+
+    :Activity-25818-Activity-25818
+          a       ns0:Activity , cv:Instance_class ;
+          ns0:Color "white" ;
+          ns0:Fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:Is_inside :Activity-25807-Activity-25807 ;
+          ns0:Name "Activity-25818" ;
+          ns0:Position "NODE x:4.75cm y:13.25cm w:21.5cm h:8.25cm index:5" ;
+          ns0:Sort_custom_attributes
+                  "ITEM \"\" param:\"\"" ;
+          ns0:Text "Fill email field" ;
+          ns0:followedBy :Activity-26014-Activity-26014 ;
+          ns0:fontcolor "EXPR expr:(\"\") val:\"\"" ;
+          ns0:objectid "EXPR expr:(0) val:0" ;
+          ns0:vizGrayscaleMode
+                  "EXPR expr:(0) val:0" .
+}
+
